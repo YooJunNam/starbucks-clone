@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+
+.mainTopContainer {
+  background: #f6f5ef;
+  height: 110px;
+  position: relative;
+}
+
+.logo {
+  background: url("https://www.starbucks.co.kr/common/img/common/logo.png");
+  width: 75px;
+  height: 75px;
+  text-indent: -20000px;
+  margin: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15%;
+  left: 2%;
+}
+
+.firstRightMenu {
+  position: absolute;
+  right: 15px;
+  top: -8px;
+  line-height: 35px;
+}
+
+ul {
+  list-style: none;
+}
+
+.topNav {
+  display: inline-flex;
+  text-align: center;
+  width: 530px;
+  justify-content: space-around;
+}
+.topNav li a {
+  font: normal 13px Avenir, Arial, georgia;
+  justify-content: space-between;
+}
+.searchBox {
+  width: 34px;
+  height: 34px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+}
+
+.searchImg {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.secondRightMenu {
+  position: absolute;
+  right: 15px;
+  top: 55px;
+  line-height: 20px;
+}
+
+.secondTopMenu {
+  display: inline-flex;
+  text-align: center;
+  width: 750px;
+  justify-content: space-around;
+  font: normal 13px Avenir, Arial, georgia;
+}
+
+.systemLink {
+  background: url("https://www.starbucks.co.kr/common/img/common/btn_notice_plus.png")
+    0 0 no-repeat;
+}
+
+.sectionLeft {
+  display: flex;
+}
