@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "나눔바른고딕", Sans-serif, "맑은 고딕", Helvetica;
 }
 
 .mainTopContainer {
@@ -70,11 +71,69 @@ ul {
   font: normal 13px Avenir, Arial, georgia;
 }
 
-.systemLink {
-  background: url("https://www.starbucks.co.kr/common/img/common/btn_notice_plus.png")
-    0 0 no-repeat;
+.middleSection {
+  display: flex;
+}
+
+/* 중간 Section Left */
+.sectionLeftPart {
+  flex: 1;
+  background-color: #111;
 }
 
 .sectionLeft {
+  display: flex;
+  color: #ffffff;
+  flex: 1;
+  position: relative;
+  flex: 1;
+  left: 25%;
+}
+.sectionLeft img {
+  position: relative;
+  top: 17px;
+}
+
+.sectionLeft ul li {
+  font-size: 14px;
+  line-height: 28px;
+  position: relative;
+  left: -15%;
+}
+
+.systemLink {
+  background: url("https://www.starbucks.co.kr/common/img/common/btn_notice_plus.png")
+    0 0 no-repeat;
+  background-size: 35px;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 18%;
+  top: 10px;
+  text-indent: -20000px;
+}
+
+/* 중간 Section Right */
+
+.sectionRightPart {
+  position: relative;
+  flex: 1;
+  left: 20%;
+}
+.sectionRightPart a img {
+  position: relative;
+  left: 15%;
+  top: 18%;
+}
+.sectionRightPart a span {
+  color: #666666;
+  font-weight: bold;
+  font-family: "맑은 고딕";
+  font-size: 1.1rem;
+}
+
+/* Second Section Part */
+
+.secondSectionContainer {
   display: flex;
 }
