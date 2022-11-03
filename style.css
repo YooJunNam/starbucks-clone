@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: "나눔바른고딕", Sans-serif, "맑은 고딕", Helvetica;
+  overflow-x: hidden;
+  height: 200000px;
 }
 
 .mainTopContainer {
@@ -23,7 +25,7 @@ body {
 
 .firstRightMenu {
   position: absolute;
-  right: 15px;
+  right: 10%;
   top: -8px;
   line-height: 35px;
 }
@@ -58,7 +60,7 @@ ul {
 
 .secondRightMenu {
   position: absolute;
-  right: 15px;
+  right: 10%;
   top: 55px;
   line-height: 20px;
 }
@@ -79,15 +81,16 @@ ul {
 .sectionLeftPart {
   flex: 1;
   background-color: #111;
+  position: relative;
+  height: 62px;
 }
 
 .sectionLeft {
   display: flex;
   color: #ffffff;
   flex: 1;
-  position: relative;
-  flex: 1;
   left: 25%;
+  position: absolute;
 }
 .sectionLeft img {
   position: relative;
@@ -107,10 +110,10 @@ ul {
   background-size: 35px;
   width: 35px;
   height: 35px;
-  position: relative;
-  left: 18%;
-  top: 10px;
+  right: -300px;
+  top: 13px;
   text-indent: -20000px;
+  position: absolute;
 }
 
 /* 중간 Section Right */
@@ -118,7 +121,7 @@ ul {
 .sectionRightPart {
   position: relative;
   flex: 1;
-  left: 20%;
+  left: 15%;
 }
 .sectionRightPart a img {
   position: relative;
@@ -134,6 +137,193 @@ ul {
 
 /* Second Section Part */
 
+.secondSection {
+  position: relative;
+  padding: 10px 0px 60px;
+  background-color: #1e3932;
+  height: 170px;
+}
+
 .secondSectionContainer {
   display: flex;
+  margin-left: 12rem;
+}
+
+.secondSectionLeft {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.secondLogo {
+  position: relative;
+  top: 15%;
+}
+.secondSectionRightTotalBox {
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.secondSectionRight {
+}
+.secondSectionRightTopContent {
+  display: flex;
+}
+.secondSectionRightTopContent strong {
+  font-size: 30px;
+  margin: 15px;
+}
+.secondSectionRightBtmContent {
+  display: flex;
+  position: relative;
+  font-size: 17px;
+  width: 150%;
+  border-bottom: 1px solid #4b615b;
+  line-height: 1.4;
+}
+
+.btnSignBox {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+.btnSign {
+  background-color: #00704a;
+  border: 2px solid #00704a;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 38px;
+  line-height: 36px;
+  padding-left: 18.5px;
+  padding-right: 18.5px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnLogin {
+  margin-left: 9px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.secondSecBtm {
+  position: relative;
+  font-size: 14px;
+  width: 150%;
+  line-height: 1.4;
+}
+.giftCardBox {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 183px;
+  height: 38px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+.giftCardLink {
+  color: #fff;
+}
+/* Last Section */
+.backImage {
+  height: 420px;
+  background: url(https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg)
+    fixed;
+  position: relative;
+}
+
+.pickY {
+  font-size: 1.5em;
+  width: 258px;
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 310px;
+}
+.pick {
+  margin: 0;
+  font-size: 77px;
+  width: 600px;
+}
+.favorite {
+  margin: 0;
+  font-size: 57px;
+  letter-spacing: 20px;
+}
+.pickContent {
+  position: absolute;
+  top: 195px;
+  left: 310px;
+  text-align: right;
+  color: white;
+}
+.lastSectionPhoto {
+  position: absolute;
+  top: 50px;
+  right: 10%;
+}
+
+/* slide 정의 */
+
+@keyframes slideFromLeft {
+  from {
+    left: -900px;
+    opacity: 0;
+  }
+  to {
+    left: 310px;
+    opacity: 1;
+  }
+}
+
+@keyframes disappearToLeft {
+  from {
+    left: 310px;
+    opacity: 1;
+  }
+  to {
+    left: -900px;
+    opacity: 0;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    right: -2000px;
+    opacity: 0;
+  }
+  to {
+    right: 10%;
+    opacity: 1;
+  }
+}
+
+@keyframes disappearToRight {
+  from {
+    right: 10%;
+    opacity: 1;
+  }
+  to {
+    right: -2000px;
+    opacity: 0;
+  }
+}
+.detailBtn {
+  border-radius: 6px;
+  border: 1px solid white;
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  vertical-align: middle;
+  right: 0;
+  vertical-align: middle;
+}
+.badge {
+  position: fixed;
+  top: 145px;
+  right: 5%;
+  z-index: 1;
 }
