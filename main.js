@@ -113,3 +113,20 @@ lastMouseBtn.addEventListener("mouseover", function () {
 
   console.log("in");
 });
+
+let menuCoffee = document.querySelector(".coffee");
+let menuBox = document.querySelector(".menuBox");
+let menuBar = document.querySelector(".menuBarContainer");
+let menuBarBtm = document.querySelector(".menuBarBtmBox");
+let middeSec = document.querySelector(".middleSection");
+
+menuCoffee.addEventListener("mouseover", function () {
+  menuBox.style.display = "block ";
+  menuBox.style.transition = "2s ease-out";
+  menuBarBtm.style.display = "block";
+  console.log("햐");
+});
+
+menuCoffee.addEventListener("mouseout", function () {
+  menuBarBtm.style.display = "none forwards";
+});
