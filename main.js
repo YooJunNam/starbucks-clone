@@ -117,16 +117,23 @@ lastMouseBtn.addEventListener("mouseover", function () {
 let menuCoffee = document.querySelector(".coffee");
 let menuBox = document.querySelector(".menuBox");
 let menuBar = document.querySelector(".menuBarContainer");
+let secondTopMenu = document.querySelector(".secondTopMenu");
+let mainTopCon = document.querySelector(".mainTopContainer");
 let menuBarBtm = document.querySelector(".menuBarBtmBox");
-let middeSec = document.querySelector(".middleSection");
 
 menuCoffee.addEventListener("mouseover", function () {
-  menuBox.style.display = "block ";
-  menuBox.style.transition = "2s ease-out";
-  menuBarBtm.style.display = "block";
+  menuBox.style.height = "400px";
+  menuBox.style.opacity = "1";
+  menuCoffee.style.background = "#2c2a29";
+  menuCoffee.style.color = "#669900";
+  menuCoffee.style.textDecoration = "underline";
   console.log("햐");
 });
 
-menuCoffee.addEventListener("mouseout", function () {
-  menuBarBtm.style.display = "none forwards";
+menuBox.addEventListener("mouseout", function () {
+  menuBox.style.height = "0";
+  menuBox.style.opacity = "1";
+  menuCoffee.style.background = "#f6f5ef";
+  menuCoffee.style.color = "#000000";
+  menuCoffee.style.textDecoration = "none";
 });
