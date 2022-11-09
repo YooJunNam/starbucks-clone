@@ -102,6 +102,12 @@ ul {
   transition: all 1s;
   overflow: hidden;
 }
+.menu li {
+  cursor: pointer;
+}
+.menu li:hover {
+  text-decoration: underline;
+}
 
 .menuBarBtmBox div {
   padding-left: 160px;

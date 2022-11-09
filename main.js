@@ -122,7 +122,7 @@ let mainTopCon = document.querySelector(".mainTopContainer");
 let menuBarBtm = document.querySelector(".menuBarBtmBox");
 
 menuCoffee.addEventListener("mouseover", function () {
-  menuBox.style.height = "400px";
+  menuBox.style.height = "500px";
   menuBox.style.opacity = "1";
   menuCoffee.style.background = "#2c2a29";
   menuCoffee.style.color = "#669900";
@@ -130,7 +130,7 @@ menuCoffee.addEventListener("mouseover", function () {
   console.log("햐");
 });
 
-menuBox.addEventListener("mouseout", function () {
+menuBox.addEventListener("mouseleave", function () {
   menuBox.style.height = "0";
   menuBox.style.opacity = "1";
   menuCoffee.style.background = "#f6f5ef";
