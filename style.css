@@ -79,29 +79,58 @@ ul {
 
 .secondRightMenu {
   position: absolute;
-  right: 20px;
+  width: 100%;
+  left: 50%;
   top: -15px;
 }
+/* 상단 메뉴 hover시 슬라이드 메뉴 형성 */
+.coffee:hover .menuBox {
+  height: 400px;
+  opacity: 1;
+}
+.topMenu:hover .menuBox {
+  height: 400px;
+  opacity: 1;
+}
 
+.menuStore:hover .menuBox {
+  height: 400px;
+  opacity: 1;
+}
+.responBox:hover .menuBox {
+  height: 400px;
+  opacity: 1;
+}
+.rewardsBox:hover .menuBox {
+  height: 400px;
+  opacity: 1;
+}
+.newBox:hover .menuBox {
+  height: 400px;
+  opacity: 1;
+}
 .menuBox {
   position: absolute;
   width: 100%;
-  top: 50px;
-}
-.Menu {
-  padding: 0;
-}
-.menuBarContainer {
-  display: flex;
-  justify-content: space-evenly;
-  background: #2c2a29;
-}
-.menuBox {
+  top: 67px;
+  left: -50%;
   height: 0;
   opacity: 0;
   transition: all 1s;
   overflow: hidden;
 }
+
+.Menu {
+  padding: 0;
+}
+
+.menuBarContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background: #2c2a29;
+  text-align: left;
+}
+
 .menu li {
   cursor: pointer;
 }
@@ -113,8 +142,6 @@ ul {
   padding-left: 160px;
   padding-top: 50px;
 }
-.menuBarBtmBox div h3:first-child {
-}
 
 .secondTopMenu {
   display: inline-flex;
@@ -123,7 +150,7 @@ ul {
   font: normal 13px Avenir, Arial, georgia;
   cursor: pointer;
 }
-.secondTopMenu li {
+.firstList {
   height: 25px;
   padding: 14px;
 }
@@ -203,20 +230,32 @@ ul {
 .menuBarContainer ul li:first-child {
   font-size: 14px;
   font-weight: bold;
-  padding: 3px 0px 12px;
+  padding: 20px 0px 12px;
   color: #fff;
 }
 
 .menuBarContainer ul li {
   font-size: 12px;
-  padding: 3px;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
   color: #999999;
+  text-align: left;
 }
-
+.menuBarContainer ul li:last-child {
+  padding-bottom: 20px;
+}
 .menuBarBtmBox {
   background: url(https://www.starbucks.co.kr/common/img/common/gnb_sub_txbg.jpg);
   height: 200px;
   width: 100%;
+  text-align: left;
+}
+.menuBarBtmBlank {
+  background: url(https://www.starbucks.co.kr/common/img/common/gnb_sub_txbg.jpg);
+  height: 50px;
+  width: 100%;
+  text-align: left;
 }
 .menuBarBtmBox div h3 {
   color: #999;
