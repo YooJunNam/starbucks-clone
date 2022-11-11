@@ -30,3 +30,6 @@ scss 등으로 간단하게 중복되는 부분을 많이 줄여주고 남들이
 
 5. 반응형 구현에 있어서 다음 프로젝트 부터는 반응형도 구현할 예정이다. 
 
+![스타벅스클론](https://user-images.githubusercontent.com/81619737/201269616-5a7dc3b5-d96b-45c4-9c7f-bb09faad7ed2.PNG)
+
+
